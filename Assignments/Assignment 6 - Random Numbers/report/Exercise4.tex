@@ -1,0 +1,9 @@
+\section*{Exercise 4}
+The calculations of pi can be found in the following files:
+\begin{itemize}
+	\item own\_estimatepi.m: Estimates pi from integration of a quarter circle. I have not been able to get this estimation more accurate than 3 digits after using $10^{8}$ numbers. If I go any higher, my computer seems unable to handle it very well.
+	\item builtin\_estimatepi.m: Estimates pi from integration of a quarter circle using Matlab's built-in RNG. I have used the default settings for this. This method calculates pi to 6 accurate digits at $10^{7}$ numbers.
+	\item own\_estimatepi\_spherical.m: Estimates pi from integration of a sphere. I have not been able to get this any more accurate than 2 digits, even at $10^{8}$ numbers.
+	\item builtin\_estimatepi\_spherical.m: Estimates pi from integration of a sphere. This one has been able to get up to 5 digits accurate at $10^{8}$ numbers.
+\end{itemize}
+The integrations of a quarter circle seem to be both more accurate and faster than the spherical calculations.

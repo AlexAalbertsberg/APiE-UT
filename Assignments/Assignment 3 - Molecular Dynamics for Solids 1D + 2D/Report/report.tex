@@ -1,0 +1,24 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\begin{document}
+	\author{Alex Aalbertsberg (s1008129)}	
+	\title{APiE Assignment: Molecular Dynamics for Solids 2D}
+	\maketitle
+	\part*{Exercise 1}
+	The structures in the 2D MD code have been implemented in the following files:
+	\begin{itemize}
+		\item square\_lattice\_diagonal.m: Implements the structure with vertical, horizontal and diagonal springs (Algorithms 12 and 13 from the reader.)
+		\item square\_lattice\_neighbor.m: Implements the structure with vertical and horizontal springs (Algorithms 12 and 13 from the reader.)
+		\item alg14\_forcecalculation: Performs the calculation of forces for both structures. (Algorithm 14 from the reader.)
+	\end{itemize}
+	I have made two movies that show the motion of each of these structures. These movies are available at the following links:
+	\href{https://youtu.be/-DFHmNt2nXk}{Diagonal Version} and \href{https://youtu.be/YFORNO8G_cY}{Non-Diagonal Version}.
+	The obvious difference that we see between the two structures is that the one without diagonal springs collapses on itself, whereas the one with the diagonal springs does not collapse and manages to stay somewhat stable. A similarity between the two is that most of the resulting effect from applying a load to the top-right particle is seen on the right side of the structure.
+	\part*{Exercise 2}
+	The solutions to parts a and b can be found by running the simulation in young\_modulus\_sim.m.
+	The solution to part c can be found by running the simulation in shear\_modulus\_sim.m.
+\end{document}

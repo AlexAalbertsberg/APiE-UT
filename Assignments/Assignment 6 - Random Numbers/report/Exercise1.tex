@@ -1,0 +1,26 @@
+\section*{Exercise 1}
+The code for this exercise may be found in the following files:
+\begin{itemize}
+	\item rng\_init.m
+	\item rng\_irand.m
+	\item rng\_rand.m
+	\item rng\_run.m	
+\end{itemize}
+The largest amount of random numbers that can be kept in memory is a little less than $2^{30}$ or 8.0 GB. Any number higher than this will result in a MATLAB warning and the program will not run.\\\\
+For the results below I will be using $X_{0}=10$.\\\\
+Results (p = $2^{15} - 1$ and c = 171):\\
+Minimum integer: 10\\
+Maximum integer: 32754\\
+Period: 150 numbers\\\\
+Results (p = $2^{15} - 1$ and c = 65539):\\
+Minimum integer: 2\\
+Maximum integer: 32583\\
+Period: 150 numbers\\\\
+Results (p = $2^{31} - 1$ and c = 171):\\
+Minimum integer: 10\\
+Maximum integer: $2.1475 * 10^{9}$\\
+Period: 32768 numbers\\\\
+Results (p = $2^{31} - 1$ and c = 65539):\\
+Minimum integer: 10\\
+Maximum integer: $2.1475 * 10^{9}$\\
+Period: 32768 numbers\\\\

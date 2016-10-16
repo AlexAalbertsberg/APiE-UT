@@ -1,0 +1,18 @@
+\section*{Exercise 2}
+For the built-in Matlab RNG, I have chosen to use the default settings: Mersenne Twister with seed 0.\\
+The computations of the averages and standard deviation of total random numbers $10^{0}, 10^{1}, 10^{2}, 10^{3}, 10^{4}, 10^{5}, 10^{6}, 10^{7}$ and $10^{8}$ can be found in the following files:
+\begin{itemize}
+	\item rng\_test\_own.m
+	\item rng\_test\_builtin.m
+\end{itemize}
+I could not go any higher than $10^{8}$, after this my PC started lagging really badly due to memory shortage.
+The average we're looking for is obviously 0.5, whereas the standard deviation should be about 0.29.
+Obviously, the more numbers we use, the more accurate we can expect the estimated average to be.
+
+The code for the chi-square test can be found in the files:
+\begin{itemize}
+	\item chisquaretest\_own.m
+	\item chisquaretest\_builtin.m
+\end{itemize}
+
+The Fourier-transform test can be found in fft\_analysis.m. Because we used a bad, short period RNG, the points in the plot are all clustered together. This signifies that the RNG is "not very random".
